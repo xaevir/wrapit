@@ -1,0 +1,25 @@
+doctype html 
+html(lang="en")
+  head
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel='shortcut icon', href='/img/favicon.ico')
+    - var titleBase =  'WrapIt by Tish -  One versatile wrap creates a wardrobe of ideas!'
+    if locals.title
+      title #{title} - #{titleBase}
+    else
+      title #{titleBase}
+    link(rel='stylesheet', href='/css/main.css')
+
+    if locals.env === 'production'
+      script(data-main='js/main-built', src='/js/libs/require.js')
+    else
+      script(data-main='js/main', src='/js/libs/require.js')
+  body
+    #notification
+    block nav
+      include nav
+    block content
+    include footer
+

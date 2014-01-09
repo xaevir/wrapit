@@ -1,0 +1,380 @@
+@import "../js/libs/bootstrap/less/bootstrap.less";
+//@import "../js/libs/bootstrap/dist/css/bootstrap.css";
+@import "../js/libs/owl-carousel/owl.carousel.css";
+@import "../js/libs/owl-carousel/owl.theme.css";
+@import "fonts.less";
+//@import "../fonts/icomoon/style.css";
+//@import (less) "../fonts/icons/style.css";
+//@import "bootstrap-compiled.less";
+
+//@media (min-width: 1070px) {//992
+  //.container {
+   // max-width: 800px;
+  //}
+//}
+.container {
+  max-width: 900px;
+}
+
+
+/* ==========================================================================
+   Base tags 
+   ========================================================================== */
+
+html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 1em;
+}
+
+body {
+  font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  //color: #000;
+}
+
+@cavendishBlue: #27ccff;
+@wrapRed: #e33933;
+
+.navbar {
+  margin-bottom: 0;
+  .navbar-brand { }
+  ul {
+    li {
+      a {
+        padding-top: 24px;
+        color: #000;
+        &:hover {
+          background-color: transparent;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+.navbar-fixed-top {
+  background-color: #fff;
+}
+
+
+#home-hd.toggle-nav-in-ad {
+  .navbar {
+    ul li a {
+      color: #fff;
+      font-size: 16px;
+      &:hover {
+        background-color: transparent;
+        color: #ccc;
+      }
+    }
+  }
+}
+
+
+#home-hd {
+  height: 100%;
+  background-size: cover !important;
+  background: url('/img/fashion-stage-blur-2.jpg') no-repeat center top;
+  position: relative;
+  @media (min-width: 1070px) {//992
+    .container {
+      max-width: 1050px;
+    }
+  }
+  .banner-message {
+    text-align: center;
+    position: absolute;
+    background-color: @wrapRed;
+    background-color: #000;
+    right: 50px;
+    bottom: 0px;
+    img {
+      padding: 75px 60px;
+    }
+  }
+}
+#home-body {
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    font-family: proximaNovaLight, sans-serif;
+  }
+  section {
+    padding: 120px 0;
+  }
+  #welcome {
+    h1 {
+      line-height: 1.5;
+    } 
+    p {
+      font-size: 22px; 
+      text-align: center;
+    }
+    .container {
+      max-width: 750px;
+    }
+  }
+  #eight-styles {
+    background: url('/img/girl-laying-hat.jpg') no-repeat center top;
+    background-size: cover;
+    h1 {
+      color: #fff;
+    }
+    .col {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      h2 {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+      }
+      p {
+        color: #fff;
+        text-align: center;
+      }
+    }
+    @media (max-width: 768px) { //meaning 0-768
+      .col {
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+  #colors {
+    padding-right: 15px;
+    padding-left: 15px;
+    @media (min-width: 992px) {
+      .col-md-1 {
+        width: 9.09090909091%;
+      }
+    }
+    h1 {
+      margin-bottom: 70px;
+    }
+    img {
+      width: 100%;
+    }
+    .colors {
+      //margin-top: 30px;
+    }
+    .sizes {
+      margin-top: 80px;
+      p {
+        text-align: center;
+        font-size: 22px;
+      }
+    }
+    .row {
+      .block {
+        height: 100px; 
+      } 
+    }
+    .black .block{
+      background: #000;
+    }
+    .grey .block{
+      background: #717173;
+    }
+    .ivory .block{
+      background: #f8f9f4;
+    }
+    .navy .block{
+      background: #120e4b;
+    }
+    .chocolate .block{
+      background: #58321b;
+    }
+    .turquoise .block{
+      background: #3cb5d2;
+    }
+    .pink .block{
+      background: #ef4e82;
+    }
+    .green .block{
+      background: #169232;
+    }
+    .yellow .block{
+      background: #fee63b;
+    }
+    .red .block{
+      background: #cb1311;
+    }
+    .purple .block{
+      background: #582582;
+    }
+  }
+  #testimonials {
+    background: #111;
+    h1 {
+      color: #fff;
+    }
+    .item {
+      margin: 0 15px;
+      p {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+      }
+      h2 {
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+      }
+    } 
+  }
+}
+
+#story {
+  .banner {
+    img {
+      width: 100%;
+    }
+  }
+  .bd {
+    background: #000;
+    padding: 60px;
+  }
+  p {
+    color: #fff;
+    font-size: 16px;
+    font-family: proximaNovaLight, sans-serif;
+    margin-bottom: 20px;
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+  .tish {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    float: left;
+  }
+}
+
+
+#contact {
+  .message {
+    text-align: center; 
+    padding: 75px 0 20px;
+    background: #000;
+    p {
+      font-size: 18px; 
+      color: #fff;
+    }
+    h1 {
+      color: #fff;
+    }
+  }
+  #banner {
+    img {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+    }
+  }
+  #form {
+    padding: 75px 0;
+    background: #000;
+    .container {
+      max-width: 500px;
+      background: #fff;
+      padding: 50px;
+    }
+    @media (min-width: 1070px) {//992
+
+    }
+  }
+}
+
+form {
+  span.error {
+    color: #b94a48;;
+    display: block;
+    //margin-top: -10px;
+    margin-bottom: 10px;
+  }
+}
+
+#alert {
+  position: fixed;
+  left: 50%;
+  z-index: 1060;
+  .content {
+    position: relative;
+    left: -50%;
+    background: #F9EDBE;
+    border: 1px solid #F0C36D;
+    color: #222;
+    .box-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    .close {
+      color: #fff; 
+      text-decoration: none;
+      margin-top: -9px;
+      margin-right: -6px;
+      .opacity(100);
+    }
+  }
+ .error {
+    border: 1px solid #E73E36;
+    background: #fff;
+    color: #E73E36;
+    .close {
+      color: #E73E36;
+    }
+  }
+}
+
+#myModal {
+  #alert;
+  .content {
+    width: 600px; 
+    background: #333;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 18px;
+    .inner {
+      padding: 40px;
+      .clearfix(); 
+    }
+    p {
+      font-size: 40px;
+    }
+  }
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  .opacity(.5);
+}
+
+footer {
+  background-color: #333;
+  padding: 50px 0;
+  text-align: center;
+  .copyright {
+    color: #777e83;
+    //font-size: 12px;
+    clear: both;
+    padding-top: 15px;
+    border-top: 1px solid #3a3e40;
+    margin-top: 15px;
+  }
+}
