@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 app.configure('development', function(){
-  app.set('port', process.env.PORT || 8090);
+  app.set('port', process.env.PORT || 8100);
   app.use(express.errorHandler());
   app.locals({
     env: 'development',
@@ -33,7 +33,7 @@ app.configure('development', function(){
 
 // production only
 app.configure('production', function(){
-  app.set('port', process.env.PORT || 8090);
+  app.set('port', process.env.PORT || 8100);
   app.locals({
     env: 'production',
   });
