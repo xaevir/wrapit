@@ -71,7 +71,7 @@ function email(opts) {
     return console.log(opts.html)
 
   var message = {
-    from: 'Website Contact Page <contact@rosito-bisani.com>',
+    from: 'Wrapitbytish.com Contact Page <contact@wrapitbytish.com>',
     // Comma separated list of recipients
     to: 'bobby.chambers33@gmail.com',
   }
