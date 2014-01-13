@@ -6284,6 +6284,10 @@ body {
   margin-bottom: 25px;
   float: left;
 }
+#instructionalVideo {
+  text-align: center;
+  margin-bottom: 50px;
+}
 #contact .message {
   text-align: center;
   padding: 75px 0 20px;

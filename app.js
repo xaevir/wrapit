@@ -55,6 +55,7 @@ app.get('/*', function(req, res, next) {
 app.get('/', routes.index);
 app.get('/contact', routes.contact);
 app.get('/my-story', routes.myStory);
+app.get('/instructional-video', routes.instructionalVideo);
 
 app.post('/contact', function(req, res, next) {
   var html  = '<p>name: '+req.body.name+'</p>'+

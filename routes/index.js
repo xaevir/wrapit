@@ -12,5 +12,9 @@ exports.contact = function(req, res){
 };
 
 exports.myStory = function(req, res){
-  res.render('story', { title: 'My Storys' });
+  res.render('story', { title: 'My Story' });
+};
+
+exports.instructionalVideo = function(req, res){
+  res.render('instructionalVideo', { title: 'Instructional Video' });
 };
