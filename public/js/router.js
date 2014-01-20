@@ -34,8 +34,18 @@ define(function(require) {
       $("#owl-carousel").owlCarousel({
         items: 3,
         navigation : true
-
       });
+
+
+      var welcomeMessage = $('#welcome').offset().top
+      $( ".scroll-down" ).click(function() {
+        $('html, body').animate({
+          'scrollTop': welcomeMessage
+        }, 1500)
+      })
+
+
+
 
       var $navbar = $("#home-hd .navbar");
 
@@ -49,7 +59,7 @@ define(function(require) {
               if($(window).scrollTop() > 0) {
                 $('#logo', $navbar).attr('src', '/img/logo-black-letters-100w.png');
               } else {
-                $('#logo', $navbar).attr('src', '/img/logo-white-letters-156w.png');
+                $('#logo', $navbar).attr('src', '/img/logo-white-letters-100w.png');
               }
             }
       });
