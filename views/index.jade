@@ -2,16 +2,15 @@ extends layout
 
 block nav
 
-block logoImg
-  img#logo(src="/img/logo-white-letters-100w.png")
-  img(src="/img/logo-black-letters-100w.png", style="display: none")
+block logo
+  span.logo-white
 
 block content
   #home-hd.toggle-nav-in-ad
     include nav
     .banner-message
       img(src="/img/one-wrap-8-ways.png")
-    .scroll-down 
+    .scroll-down
       p LEARN MORE
       img(src="/img/scroll-down-black.png")
 

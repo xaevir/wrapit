@@ -46,7 +46,33 @@ body {
 
 .navbar {
   margin-bottom: 0;
-  .navbar-brand { }
+  .navbar-brand {
+    span {
+      @media (max-width: @screen-xs-max) { //0-767
+
+        background: url(/img/logo-white-letters-100w.png) no-repeat 0 0;
+      }
+      display: block;
+      width: 100px;
+      height: 37px;
+      background: url(/img/logo-black-letters-100w.png) no-repeat 0 0;
+    }
+    span.logo-white {
+      background: url(/img/logo-white-letters-100w.png) no-repeat 0 0;
+    }
+  }
+  @media (max-width: @screen-xs-max) { //0-767
+    background-color: #222;
+    .navbar-brand {
+ 
+    }
+    .navbar-toggle {
+      background-color: #333;
+      .icon-bar {
+        background-color: #fff;
+      }
+    }
+  }
   ul {
     li {
       a {
@@ -160,7 +186,8 @@ body {
         text-align: center;
       }
     }
-    @media (max-width: 768px) { //meaning 0-768
+
+    @media (max-width: @screen-xs-max) { //0-767
       .col {
         margin-bottom: 50px;
       }

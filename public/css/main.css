@@ -6098,6 +6098,31 @@ body {
 .navbar {
   margin-bottom: 0;
 }
+.navbar .navbar-brand span {
+  display: block;
+  width: 100px;
+  height: 37px;
+  background: url(/img/logo-black-letters-100w.png) no-repeat 0 0;
+}
+@media (max-width: 767px) {
+  .navbar .navbar-brand span {
+    background: url(/img/logo-white-letters-100w.png) no-repeat 0 0;
+  }
+}
+.navbar .navbar-brand span.logo-white {
+  background: url(/img/logo-white-letters-100w.png) no-repeat 0 0;
+}
+@media (max-width: 767px) {
+  .navbar {
+    background-color: #222;
+  }
+  .navbar .navbar-toggle {
+    background-color: #333;
+  }
+  .navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+}
 .navbar ul li a {
   padding-top: 24px;
   color: #000;
@@ -6193,7 +6218,7 @@ body {
   color: #fff;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #home-body #eight-styles .col {
     margin-bottom: 50px;
   }
