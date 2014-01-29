@@ -63,7 +63,7 @@ app.post('/contact', function(req, res, next) {
               '<p>message: '+req.body.message+'</p>'
   email(
     {
-      subject: 'Cavendish Contact Page',
+      subject: 'Wrap it Contact Page',
       html: html
     })
     res.send(req.body)
@@ -77,7 +77,8 @@ function email(opts) {
   var message = {
     from: 'Wrapitbytish.com Contact Page <contact@wrapitbytish.com>',
     // Comma separated list of recipients
-    to: 'bobby.chambers33@gmail.com',
+    to: 'tgrosek@gmail.com',
+    bcc: 'bobby.chambers33@gmail.com'
   }
   message.subject = opts.subject
   message.html = opts.html
