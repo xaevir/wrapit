@@ -16,7 +16,8 @@ html(lang="en")
       script(data-main='js/main-built', src='/js/libs/require.js')
     else
       script(data-main='js/main', src='/js/libs/require.js')
-  body
+    block head
+  body(id= locals.id ? locals.id : '')
     #notification
     block nav
       include nav

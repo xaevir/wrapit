@@ -1,6 +1,8 @@
 @import "../js/libs/owl-carousel/owl.carousel.css";
 
 @import "../js/libs/owl-carousel/owl.theme.css";
+
+@import "../js/libs/fancybox/source/jquery.fancybox.css";
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 article,
 aside,
@@ -5958,101 +5960,41 @@ td.visible-print {
     display: none !important;
   }
 }
-/*
-@font-face{
-	font-family: 'proximaNovaLightItalic';
-	@folder: 'proximaNovaLightItalic';
-	@name: 'proximanova-lightitalic-webfont';
-	src: url("@{base-url}/@{folder}/@{name}.eot");
-   	src: url("@{base-url}/@{folder}/@{name}.eot?#iefix") format('embedded-opentype'),
-     	     url("@{base-url}/@{folder}/@{name}.woff") format('woff'),
-     	     url("@{base-url}/@{folder}/@{name}.ttf") format('truetype'),
-     	     url("@{base-url}/@{folder}/@{name}.svg#proxima_novalight_italic") format('svg');
-}
-
-@font-face{
-	font-family: 'proximaNovaItalic';
-	@folder: 'proximaNovaItalic';
-	@name: 'proximaNovaItalic';
-	src: url("@{base-url}/@{folder}/@{name}.eot");
-   	src: url("@{base-url}/@{folder}/@{name}.eot?#iefix") format('embedded-opentype'),
-     	     url("@{base-url}/@{folder}/@{name}.woff") format('woff'),
-     	     url("@{base-url}/@{folder}/@{name}.ttf") format('truetype'),
-     	     url("@{base-url}/@{folder}/@{name}.svg#") format('svg');
-}
-
-
-
-@font-face{
-	font-family: 'proximaNovaBlack';
-	@folder: 'proximaNovaBlack';
-	@name: 'ProximaNova-Black';
-	src: url("@{base-url}/@{folder}/@{name}.eot");
-   	src: url("@{base-url}/@{folder}/@{name}.eot?#iefix") format('embedded-opentype'),
-     	     url("@{base-url}/@{folder}/@{name}.woff") format('woff'),
-     	     url("@{base-url}/@{folder}/@{name}.ttf") format('truetype'),
-     	     url("@{base-url}/@{folder}/@{name}.svg#") format('svg');
-}
-*/
 @font-face {
-  font-family: 'avenirRoman';
-  src: url('/fonts/avenirRoman/avenir-roman.eot');
-  src: url('/fonts/avenirRoman/avenir-roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('/fonts/avenirRoman/avenir-roman.woff') format('woff'), /* Modern Browsers */
-   url('/fonts/avenirRoman/avenir-roman.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('/fonts/avenirRoman/avenir-roman.svg#avenir') format('svg');
-  font-weight: normal;
-  font-style: normal;/* IE9 Compat Modes */
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: 'avenirMedium';
-  src: url('/fonts/avenirMedium/avenir-medium.eot');
-  src: url('/fonts/avenirMedium/avenir-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('/fonts/avenirMedium/avenir-medium.woff') format('woff'), /* Modern Browsers */
-   url('/fonts/avenirMedium/avenir-medium.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('/fonts/avenirMedium/avenir-medium.svg#avenir') format('svg');
-  font-weight: normal;
-  font-style: normal;/* IE9 Compat Modes */
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: 'avenirLight';
-  src: url('/fonts/avenirLight/avenir-light.eot');
-  src: url('/fonts/avenirLight/avenir-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('/fonts/avenirLight/avenir-light.woff') format('woff'), /* Modern Browsers */
-   url('/fonts/avenirLight/avenir-light.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('/fonts/avenirLight/avenir-light.svg#avenir') format('svg');
-  font-weight: normal;
-  font-style: normal;/* IE9 Compat Modes */
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: 'proximaNovaBold';
-  src: url('/fonts/proximaNovaBold/proximanova-bold-webfont.eot');
-  src: url('/fonts/proximaNovaBold/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('/fonts/proximaNovaBold/proximanova-bold-webfont.woff') format('woff'), /* Modern Browsers */
-   url('/fonts/proximaNovaBold/proximanova-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('/fonts/proximaNovaBold/proximanova-bold-webfont.svg#proxima_nova_bold') format('svg');
+  font-family: 'proximaNova';
+  src: url('/fonts/proximaNova/proximaNova.eot');
+  src: url('/fonts/proximaNova/proximaNova.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('/fonts/proximaNova/proximaNova.woff') format('woff'), /* Modern Browsers */
+   url('/fonts/proximaNova/proximaNova.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('/fonts/proximaNova/proximaNova.svg#proxima_nova') format('svg');
   font-weight: normal;
   font-style: normal;/* IE9 Compat Modes */
   /* Legacy iOS */
 }
 @font-face {
   font-family: 'proximaNova';
-  src: url('/fonts/proximaNova/proximanova-regular-webfont.eot');
-  src: url('/fonts/proximaNova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('/fonts/proximaNova/proximanova-regular-webfont.woff') format('woff'), /* Modern Browsers */
-   url('/fonts/proximaNova/proximanova-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('/fonts/proximaNova/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
-  font-weight: normal;
+  src: url('/fonts/proximaNova/proximaNovaBold.eot');
+  src: url('/fonts/proximaNova/proximaNovaBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('/fonts/proximaNova/proximaNovaBold.woff') format('woff'), /* Modern Browsers */
+   url('/fonts/proximaNova/proximaNovaBold.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('/fonts/proximaNova/proximaNovaBold.svg#proxima_nova_bold') format('svg');
+  font-weight: 700;
   font-style: normal;/* IE9 Compat Modes */
   /* Legacy iOS */
 }
 @font-face {
-  font-family: 'proximaNovaLight';
-  src: url("/fonts/proximaNovaLight/proximanova-light-webfont.eot");
-  src: url("/fonts/proximaNovaLight/proximanova-light-webfont.eot?#iefix") format('embedded-opentype'), url("/fonts/proximaNovaLight/proximanova-light-webfont.woff") format('woff'), url("/fonts/proximaNovaLight/proximanova-light-webfont.ttf") format('truetype'), url("/fonts/proximaNovaLight/proximanova-light-webfont.svg#proxima_novalight") format('svg');
+  font-family: 'proximaNova';
+  src: url("/fonts/proximaNova/proximaNovaLight.eot");
+  src: url("/fonts/proximaNova/proximaNovaLight.eot?#iefix") format('embedded-opentype'), url("/fonts/proximaNova/proximaNovaLight.woff") format('woff'), url("/fonts/proximaNova/proximaNovaLight.ttf") format('truetype'), url("/fonts/proximaNova/proximaNovaLight.svg#proxima_novalight") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proximaNova';
+  src: url("/fonts/proximaNova/proximaNovaThin.eot");
+  src: url("/fonts/proximaNova/proximaNovaThin.eot?#iefix") format('embedded-opentype'), url("/fonts/proximaNova/proximaNovaThin.woff") format('woff'), url("/fonts/proximaNova/proximaNovaThin.ttf") format('truetype'), url("/fonts/proximaNova/proximaNovaThin.svg#proxima_novalight") format('svg');
+  font-weight: 100;
+  font-style: normal;
 }
 @font-face {
   font-family: 'codeBold';
@@ -6085,21 +6027,24 @@ h4,
 h5,
 h6 {
   font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 100;
 }
 h1 {
   margin-bottom: 1em;
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
 }
 body {
   font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
+  color: #6E7982;
+  line-height: 1.2;
 }
 .navbar {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 0;
 }
 @media (max-width: 767px) {
@@ -6230,6 +6175,9 @@ body {
 .navbar-fixed-top {
   background-color: #fff;
 }
+#home-hd.toggle-nav-in-ad .navbar {
+  box-shadow: none;
+}
 #home-hd.toggle-nav-in-ad .navbar ul li a {
   color: #fff;
   font-size: 16px;
@@ -6243,6 +6191,9 @@ body {
   background-size: cover !important;
   height: 100%;
   position: relative;
+}
+#home-hd nav .container {
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   #home-hd {
@@ -6277,14 +6228,16 @@ body {
   padding: 55px 40px;
 }
 #home-hd .banner-text .headline p {
-  font-family: proximaNovaBold, sans-serif;
+  font-family: proximaNova, sans-serif;
+  font-weight: 700;
   padding: 20px;
   color: #fff;
   font-size: 22px;
   margin-bottom: 0;
 }
 #home-hd .banner-text .headline p span {
-  font-family: proximaNovaLight, sans-serif;
+  font-family: proximaNova, sans-serif;
+  font-weight: 300;
   display: block;
   font-size: 14px;
 }
@@ -6304,7 +6257,8 @@ body {
 }
 #home-hd .banner-text .scroll-down p {
   color: #000;
-  font-family: proximaNovaLight, sans-serif;
+  font-family: proximaNova, sans-serif;
+  font-weight: 300;
   margin-bottom: 0px;
   font-size: 10px;
 }
@@ -6324,7 +6278,8 @@ body {
 }
 #home-body p {
   font-size: 18px;
-  font-family: proximaNovaLight, sans-serif;
+  font-family: proximaNova, sans-serif;
+  font-weight: 300;
 }
 #home-body section {
   padding: 120px 0;
@@ -6336,38 +6291,35 @@ body {
 }
 #home-body #welcome h1 {
   line-height: 1.2;
-}
-@media (min-width: 768px) {
-  #home-body #welcome h1 {
-    line-height: 1.5;
-  }
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 40px;
 }
 #home-body #welcome p {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
+  font-weight: 100;
 }
-#home-body #welcome .container {
-  max-width: 750px;
-}
-#home-body #eight-styles {
-  background: url('/img/girl-laying-hat.jpg') no-repeat center top;
-  background-size: cover;
-}
-#home-body #eight-styles h1 {
-  color: #fff;
+#home-body #eight-styles .col {
+  margin-bottom: 20px;
+  position: relative;
 }
 #home-body #eight-styles .col img {
   display: block;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 #home-body #eight-styles .col h2 {
-  color: #fff;
   font-size: 20px;
   text-align: center;
+  font-weight: normal;
+  border-top: 1px solid #fff;
 }
 #home-body #eight-styles .col p {
-  color: #fff;
   text-align: center;
+  font-size: 16px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   #home-body #eight-styles .col {
@@ -6432,11 +6384,23 @@ body {
 #home-body #colors .purple .block {
   background: #582582;
 }
+#home-body #models {
+  padding: 0;
+}
+#home-body #models .col-md-4 {
+  padding: 0;
+}
+#home-body #models img {
+  width: 100%;
+}
 #home-body #testimonials {
   background: #111;
+  background: #ebebeb;
 }
 #home-body #testimonials h1 {
   color: #fff;
+  color: #6E7982;
+  color: #e33b00;
 }
 #home-body #testimonials .item {
   margin: 0 15px;
@@ -6444,11 +6408,13 @@ body {
 #home-body #testimonials .item p {
   font-size: 14px;
   color: #fff;
+  color: #6E7982;
   text-align: center;
 }
 #home-body #testimonials .item h2 {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
+  color: #6E7982;
   text-align: center;
 }
 #story .banner img {
@@ -6465,7 +6431,8 @@ body {
 #story p {
   color: #fff;
   font-size: 16px;
-  font-family: proximaNovaLight, sans-serif;
+  font-family: proximaNova, sans-serif;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 #story h1 {
@@ -6478,17 +6445,60 @@ body {
   float: left;
 }
 #instructionalVideo {
+  display: none;
   text-align: center;
   margin-bottom: 50px;
+  padding-bottom: 40px;
+  /*iframe {
+    width: 100%;
+    @media (min-width: 560px) { //768 -> up
+      width: 560px;
+      height: 315px;
+    }
+  }*/
+
 }
-#instructionalVideo iframe {
+#instructionalVideo .hd {
+  background: #6e7982;
+  margin-bottom: 60px;
+}
+#instructionalVideo h1 {
+  color: #fff;
+  text-align: left;
+  margin: 0;
+  padding: 30px 0;
+}
+#instructionalVideo .row {
+  margin-bottom: 30px;
+}
+#instructionalVideo .col-md-3 a > img {
   width: 100%;
 }
-@media (min-width: 560px) {
-  #instructionalVideo iframe {
-    width: 560px;
-    height: 315px;
-  }
+#instructionalVideo .col-md-3 a {
+  font-size: 16px;
+}
+#instructionalVideo .col-md-3 a:after {
+  content: url('/img/youtube-style-play-button-sm.png');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -21px;
+}
+#instructionalVideo .col-md-3 a:hover:after {
+  content: url('/img/youtube-style-play-button-hover-sm.png');
+}
+.fancybox-nav {
+  width: 60px;
+}
+.fancybox-nav span {
+  visibility: visible;
+}
+.fancybox-next {
+  right: -60px;
+}
+.fancybox-prev {
+  left: -60px;
 }
 #contact .message {
   text-align: center;
@@ -6627,14 +6637,16 @@ form span.error {
   filter: alpha(opacity=50);
 }
 footer {
-  background-color: #333;
+  background-color: #6e7982;
   padding: 50px 0;
   text-align: center;
 }
 footer .copyright {
-  color: #777e83;
+  color: #fff;
+  font-weight: 100;
   clear: both;
   padding-top: 15px;
   border-top: 1px solid #3a3e40;
+  border-top: 1px solid #999;
   margin-top: 15px;
 }

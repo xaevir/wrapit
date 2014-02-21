@@ -3,6 +3,7 @@
 @import "../js/libs/owl-carousel/owl.carousel.css";
 @import "../js/libs/owl-carousel/owl.theme.css";
 @import "fonts.less";
+@import "../js/libs/fancybox/source/jquery.fancybox.css";
 //@import "../fonts/icomoon/style.css";
 //@import (less) "../fonts/icons/style.css";
 //@import "bootstrap-compiled.less";
@@ -27,13 +28,13 @@ html {
 
 h1, h2, h3, h4, h5, h6  {
   font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 100;
 }
 
 h1 {
   margin-bottom: 1em;
   @media (min-width: @screen-sm-min) { //768 -> up
-    font-size: 50px;
+    font-size: 35px;
   }
 }
 
@@ -41,12 +42,14 @@ body {
   font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
   //color: #000;
+  color: #6E7982;
+  line-height: 1.2;
 }
 
-@cavendishBlue: #27ccff;
 @wrapRed: #e33933;
 
 .navbar {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 0;
   @media (max-width: @screen-xs-max) { //0-767
     .navbar-inverse;
@@ -93,6 +96,7 @@ body {
 
 #home-hd.toggle-nav-in-ad {
   .navbar {
+    box-shadow: none;
     ul li a {
       color: #fff;
       font-size: 16px;
@@ -110,6 +114,9 @@ body {
   background-size: cover !important;
   height: 100%;
   position: relative;
+  nav .container {
+    max-width: 100%;
+  }
   @media (min-width: @screen-sm-min) { //768 -> up
     background: url('/img/fashion-stage-blur-2.jpg') no-repeat center top;
   }
@@ -135,13 +142,15 @@ body {
         padding: 55px 40px;
       }
       p { // visible only at xs
-        font-family: proximaNovaBold, sans-serif;
+        font-family: proximaNova, sans-serif;
+        font-weight: 700;
         padding: 20px;
         color: #fff;
         font-size: 22px;
         margin-bottom: 0;
         span {
-          font-family: proximaNovaLight, sans-serif;
+          font-family: proximaNova, sans-serif;
+          font-weight: 300;
           display: block;
           font-size: 14px;
         }
@@ -160,7 +169,8 @@ body {
       }
       p {
         color: #000;
-        font-family: proximaNovaLight, sans-serif;
+        font-family: proximaNova, sans-serif;
+        font-weight: 300;
         margin-bottom: 0px;
         font-size: 10px;
         @media (min-width: @screen-sm-min) { //768 -> up
@@ -182,7 +192,8 @@ body {
   }
   p {
     font-size: 18px;
-    font-family: proximaNovaLight, sans-serif;
+    font-family: proximaNova, sans-serif;
+    font-weight: 300;
   }
   section {
     padding: 120px 0;
@@ -191,39 +202,49 @@ body {
     }
   }
   #welcome {
+    //background-color: #6e7982;
     h1 {
       line-height: 1.2;
-      @media (min-width: @screen-sm-min) { //768 -> up
-        line-height: 1.5;
-      }
+      font-weight: 100;
+      letter-spacing: 5px;
+      font-size: 40px;
+      //color: #fff;
+      //text-align: left;
     }
     p {
-      font-size: 22px;
+      font-size: 20px;
       text-align: center;
-    }
-    .container {
-      max-width: 750px;
+      //letter-spacing: 2px;
+      font-weight: 100;
+      //color: #fff;
+      //text-transform: uppercase;
     }
   }
   #eight-styles {
-    background: url('/img/girl-laying-hat.jpg') no-repeat center top;
-    background-size: cover;
+    //background: url('/img/girl-laying-hat-lighter.jpg') no-repeat center top;
+    //background-size: cover;
     h1 {
-      color: #fff;
+      //font-weight: normal;
     }
     .col {
+      margin-bottom: 20px;
+      position: relative;
       img {
         display: block;
         margin: 0 auto;
+        position: relative;
+        z-index: 1;
       }
       h2 {
-        color: #fff;
         font-size: 20px;
         text-align: center;
+        font-weight: normal;
+        border-top: 1px solid #fff;
       }
       p {
-        color: #fff;
         text-align: center;
+        font-size: 16px;
+        font-weight: 300;
       }
     }
 
@@ -297,21 +318,35 @@ body {
       background: #582582;
     }
   }
+  #models {
+    padding: 0;
+    .col-md-4 {
+      padding: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
   #testimonials {
     background: #111;
+    background: #ebebeb;
     h1 {
       color: #fff;
+      color: #6E7982;
+      color: #e33b00;
     }
     .item {
       margin: 0 15px;
       p {
         font-size: 14px;
         color: #fff;
+        color: #6E7982;
         text-align: center;
       }
       h2 {
-        font-size: 18px;
+        font-size: 16px;
         color: #fff;
+        color: #6E7982;
         text-align: center;
       }
     } 
@@ -333,7 +368,8 @@ body {
   p {
     color: #fff;
     font-size: 16px;
-    font-family: proximaNovaLight, sans-serif;
+    font-family: proximaNova, sans-serif;
+    font-weight: 300;
     margin-bottom: 20px;
   }
   h1 {
@@ -347,18 +383,69 @@ body {
   }
 }
 
-
 #instructionalVideo {
+  display: none;
   text-align: center;
   margin-bottom: 50px;
-  iframe {
+  padding-bottom: 40px;
+  //.container { max-width: 100%; }
+  /*iframe {
     width: 100%;
     @media (min-width: 560px) { //768 -> up
       width: 560px;
       height: 315px;
     }
+  }*/
+  .hd {
+    background: #6e7982;
+    //background: #85929d;
+    margin-bottom: 60px;
+  }
+  h1 {
+    //margin-top: 1em;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    padding: 30px 0;
+  }
+  .row {
+    margin-bottom: 30px;
+  }
+  .col-md-3 a > img {
+    width: 100%;
+  }
+  .col-md-3 a {
+    font-size: 16px;
+  }
+  .col-md-3 a:after {
+    content: url('/img/youtube-style-play-button-sm.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -21px;
+  }
+  .col-md-3 a:hover:after {
+    content: url('/img/youtube-style-play-button-hover-sm.png');
   }
 }
+
+.fancybox-nav {
+    width: 60px;
+}
+
+.fancybox-nav span {
+    visibility: visible;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
+}
+
 
 #contact {
   .message {
@@ -459,15 +546,18 @@ form {
 }
 
 footer {
-  background-color: #333;
+  background-color: #6e7982;
   padding: 50px 0;
   text-align: center;
   .copyright {
-    color: #777e83;
+    //color: #777e83;
+    color: #fff;
     //font-size: 12px;
+    font-weight: 100;
     clear: both;
     padding-top: 15px;
     border-top: 1px solid #3a3e40;
+    border-top: 1px solid #999;
     margin-top: 15px;
   }
 }

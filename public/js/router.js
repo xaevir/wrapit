@@ -12,21 +12,14 @@ define(function(require) {
       this.activePage(page)
       if (page === 'contact')
         this.contact()
+      if (page === 'instructional-videos')
+        this.instructionalVideos()
       if (page === '')
         this.index()
-
     },
 
     routes: {
       //"": "index",
-    },
-
-    changeView: function(view) {
-      if ( null != this.currentView ) {
-        this.currentView.undelegateEvents();
-      }
-      this.currentView = view;
-      this.currentView.render();
     },
 
     index: function() {
@@ -61,6 +54,52 @@ define(function(require) {
     contact: function() {
       var view = new ContactView({el: $('.contact')} )
       $('#app').html(view.render().el)
+    },
+
+    instructionalVideos: function() {
+      $('.fancybox')
+        .attr('rel', 'gallery')
+        .fancybox({
+          openEffect  : 'elastic',
+          closeEffect : 'none',
+          nextEffect  : 'none',
+          prevEffect  : 'none',
+          width: 853,
+          height: 480,
+          padding: 0,
+          margin: 0,
+          autoSize: true,
+          aspectRatio: true,
+          helpers : { media: true },
+          youtube : {
+            autoplay    : 1,        // default
+            autohide    : 1,        // default
+            rel         : 0,        // default
+            enablejsapi : 1,        // default
+            wmode       : 'opaque'  // default
+            // height and width set to 100% by fancybox
+          },
+          beforeShow: function() {
+            // Find the iframe ID
+            var id = $.fancybox.inner.find('iframe').attr('id');
+            // Create video player object and add event listeners
+            var player = new YT.Player(id, {
+             events: {
+               'onReady': function(event){
+                 event.target.setVolume(60);
+                 //event.target.playVideo();
+               },
+               'onStateChange': function(event){
+                 if (event.data === 0) {
+                   $.fancybox.next();
+                 }
+               }
+              }
+           });
+          }
+      });
+      // after fancybox show the videos
+      $('#instructionalVideo').css('display', 'block')
     },
 
     activePage: function(page) {

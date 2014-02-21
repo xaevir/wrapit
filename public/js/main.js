@@ -10,6 +10,8 @@ require.config({
     collapse: 'libs/bootstrap/js/collapse',
     utilities: 'libs/utilities',
     owl: 'libs/owl-carousel/owl.carousel',
+    fancybox: 'libs/fancybox/source/jquery.fancybox',
+    fancyboxMedia: 'libs/fancybox/source/helpers/jquery.fancybox-media'
   },
 
   shim: {
@@ -18,10 +20,10 @@ require.config({
     'owl': ['jQuery'],
     'transition': ['jQuery'],
     'collapse' : ['jQuery', 'transition'],
-    //'carousel': ['transition'],
+    'fancybox': ['jQuery'],
+    'fancyboxMedia': ['fancybox'],
     'utilities': ['jQuery', 'Backbone', 'Backbone.Validation'],
-    //'app': ['Backbone', 'carousel', 'Backbone.Validation', 'utilities', 'collapse']
-    'app': ['Backbone', 'Backbone.Validation', 'utilities', 'owl', 'collapse']
+    'app': ['Backbone', 'Backbone.Validation', 'utilities', 'owl', 'collapse', 'fancyboxMedia']
   }
 });
 

@@ -15,6 +15,6 @@ exports.myStory = function(req, res){
   res.render('story', { title: 'My Story' });
 };
 
-exports.instructionalVideo = function(req, res){
-  res.render('instructionalVideo', { title: 'Instructional Video' });
+exports.instructionalVideos = function(req, res){
+  res.render('instructionalVideos', { title: 'Instructional Videos', id: 'instructional-videos' });
 };
