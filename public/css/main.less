@@ -43,7 +43,6 @@ body {
   height: 100%;
   //color: #000;
   //color: #6E7982;
-  color: #545454;
   line-height: 1.2;
 }
 
@@ -55,9 +54,6 @@ body {
 .navbar {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 0;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  transition: all .5s ease;
   @media (max-width: @screen-xs-max) { //0-767
     .navbar-inverse;
   }
@@ -100,205 +96,124 @@ body {
   }
 }
 
-
-
-/* Slide 5 */
-#slide-5 {position: relative;}
-#slide-5 .bcg {background-image:url('/img/fashion-stage-blur-2.jpg')}
-#slide-5 .bcg2 {
-    background-image:url('/img/fashion-stage-color.jpg');
-    position: fixed; bottom: 0; left: 0;
-    opacity: 0; z-index: 1
-}
-#slide-5 .bcg3 {
-    background: none; background-color: #010101;
-    position: fixed; bottom: 0; left: 0;
-    opacity: 0; z-index: 2
+.navbar-fixed-top {
+  background-color: #fff;
 }
 
-
-.hsContainer {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    opacity: 0;
-}
-.hsContent {
-    max-width: 450px;
-    margin: -150px auto 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-    color: #ebebeb;
-    padding: 0 8%;
-    text-align: center
-}
-.bcg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-
-#home {
-  .navbar-fixed-top {
-    background-color: #fff;
+#home-hd.toggle-nav-in-ad {
+  .navbar {
+    box-shadow: none;
+    ul li a {
+      color: #fff;
+      font-size: 16px;
+      &:hover {
+        background-color: transparent;
+        color: #ccc;
+      }
+    }
   }
+}
 
-  #slide-1.toggle-nav-in-ad {
-    .navbar {
-      box-shadow: none;
-      ul li a {
+#home-hd {
+  //background: url('/img/fashion-stage-sideways.jpg') no-repeat 0 0;
+  background: url('/img/fashion-stage-blur-2.jpg') no-repeat 63% 0;
+  background-size: cover !important;
+  height: 100%;
+  position: relative;
+  nav .container {
+    max-width: 100%;
+  }
+  @media (min-width: @screen-sm-min) { //768 -> up
+    background: url('/img/fashion-stage-blur-2.jpg') no-repeat center top;
+  }
+  @media (min-width: 1070px) {//992
+    .container {
+      max-width: 1050px;
+    }
+  }
+  .banner-text {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    @media (min-width: @screen-sm-min) { //768 -> up
+      right: 50px;
+    }
+    .headline {
+      background-color: #000;
+      float: left;
+      @media (min-width: @screen-sm-min) { //768 -> up
+        float: right;
+      }
+      img {
+        padding: 55px 40px;
+      }
+      p { // visible only at xs
+        font-family: proximaNova, sans-serif;
+        font-weight: 700;
+        padding: 20px;
         color: #fff;
-        font-size: 16px;
-        &:hover {
-          background-color: transparent;
-          color: #ccc;
+        font-size: 22px;
+        margin-bottom: 0;
+        span {
+          font-family: proximaNova, sans-serif;
+          font-weight: 300;
+          display: block;
+          font-size: 14px;
+        }
+      }
+    }
+    .scroll-down {
+      cursor: pointer;
+      text-align: center;
+      float: right;
+      margin-top: 50px;
+      margin-left: 20px;
+      @media (min-width: @screen-sm-min) { //768 -> up
+        margin-top: 125px;
+        margin-right: 50px;
+        float: left;
+      }
+      p {
+        color: #000;
+        font-family: proximaNova, sans-serif;
+        font-weight: 300;
+        margin-bottom: 0px;
+        font-size: 10px;
+        @media (min-width: @screen-sm-min) { //768 -> up
+          font-size: 15px;
+        }
+      }
+      img {
+        @media (max-width: @screen-xs-max) { //0-767
+          width: 50px;
         }
       }
     }
   }
+}
+#home-body {
   h1 {
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 2em;
+    //margin-bottom: 2em;
   }
   p {
-    font-size: 24px;
+    font-size: 18px;
     font-family: proximaNova, sans-serif;
     font-weight: 300;
   }
-  .bg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
   section {
-    height: 100%;
-    //padding: 120px 0;
-    //@media (min-width: @screen-sm-min) { //768 -> up
-      //padding: 120px 0;
-    //}
-  }
-  section#slide-1 {
-    .bg { background-image: url('/img/fashion-stage-blur-2.jpg') }
-    .bg2 {
-      background-image: url('/img/fashion-stage-color.jpg');
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      opacity: 0;
-      z-index: 1;
-    }
-    background-size: cover !important;
-    nav .container {
-      max-width: 100%;
-    }
-    @media (max-width: @screen-xs-max) { //0-767
-      background-position: 63% %;
-    }
-    @media (min-width: 1070px) {//992
-      .container {
-        max-width: 1050px;
-      }
-    }
-    .banner-text {
-      text-align: center;
-      position: absolute;
-      bottom: 0px;
-      z-index: 2;
-      @media (min-width: @screen-sm-min) { //768 -> up
-        right: 50px;
-      }
-      .headline {
-        background-color: #000;
-        float: left;
-        @media (min-width: @screen-sm-min) { //768 -> up
-          float: right;
-        }
-        img {
-          padding: 55px 40px;
-        }
-        p { // visible only at xs
-          font-family: proximaNova, sans-serif;
-          font-weight: 700;
-          padding: 20px;
-          color: #fff;
-          font-size: 22px;
-          margin-bottom: 0;
-          span {
-            font-family: proximaNova, sans-serif;
-            font-weight: 300;
-            display: block;
-            font-size: 14px;
-          }
-        }
-      }
-      .scroll-down {
-        cursor: pointer;
-        text-align: center;
-        float: right;
-        margin-top: 50px;
-        margin-left: 20px;
-        @media (min-width: @screen-sm-min) { //768 -> up
-          margin-top: 125px;
-          margin-right: 50px;
-          float: left;
-        }
-        p {
-          color: #000;
-          font-family: proximaNova, sans-serif;
-          font-weight: 300;
-          margin-bottom: 0px;
-          font-size: 10px;
-          @media (min-width: @screen-sm-min) { //768 -> up
-            font-size: 15px;
-          }
-        }
-        img {
-          @media (max-width: @screen-xs-max) { //0-767
-            width: 50px;
-          }
-        }
-      }
+    padding: 120px 0;
+    @media (min-width: @screen-sm-min) { //768 -> up
+      padding: 120px 0;
     }
   }
-  #slide-2 {
-    .bg {
-      background: none;
-      background-color: #010101;
-      height: 310px;
-      text-align: center
-      position: fixed;
-    }
-    .container {
-      max-width: inherit;
-    }
-    .container.one {
-      border: 15px solid #ffdd00;
-      background: #ffdd00;
-      padding: 0;
-    }
-    .border {
-      border:5px solid #fff;
-      padding: 10px;
-    }
+  #welcome {
     h1 {
-      line-height: 1.2;
-      //font-weight: 100;
-      letter-spacing: 2px;
+      line-height: 1;
+      font-weight: 100;
+      letter-spacing: 5px;
       font-size: 40px;
-      color: #fff;
-      //color: #ffdd00;
-      margin-bottom: 1em;
       //text-align: left;
     }
     p {
@@ -306,8 +221,6 @@ body {
       text-align: center;
       //letter-spacing: 2px;
       font-weight: 100;
-      margin-top: 20px;
-      //color: #fff;
       //text-transform: uppercase;
     }
   }
@@ -492,7 +405,6 @@ body {
       background: #fff;
     }
   }
-
 }
 
 #story {

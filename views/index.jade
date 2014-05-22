@@ -6,213 +6,179 @@ block logo
   span.logo-white
 
 block content
-  section#slide-1.toggle-nav-in-ad.slide
-    .bg(data-center="background-position: 50% 0px;",
-        data-top-bottom="background-position: 50% -200px;",
-        data-anchor-target="#slide-1")
-      include nav
-      .banner-text(data-bottom="opacity: 1", data-106-top="opacity: 0", data-anchor-target="#slide-1 .headline")
-        .headline
-          img.hidden-xs(src="/img/one-wrap-8-ways.png")
-          p.visible-xs ONE WRAP
-            span 8 WAYS TO WEAR
-        .scroll-down
-          p LEARN MORE
-          img(src="/img/scroll-down-arrow.png")
+  #home-hd.toggle-nav-in-ad
+    include nav
+    .banner-text
+      .headline
+        img.hidden-xs(src="/img/one-wrap-8-ways.png")
+        p.visible-xs ONE WRAP
+          span 8 WAYS TO WEARNE 
+      .scroll-down
+        p LEARN MORE
+        img(src="/img/scroll-down-arrow.png")
 
-  section#slide-2.slide
-    .bg(data-top-bottom="background-color:(0,0,0);"
-        data-top="background-color:rgb(1,27,59);"
-        data-anchor-target="#slide-2")
-      .hsContainer
-        .hsContent
-          h2(data-top-top="opacity: 0",
-             data-center="opacity: 1",
-             data-206-top="opacity: 1",
-             data-106-top="opacity: 0",
-             data-anchor-target="#slide-2 h2")
-    //- .container.one
-      .border
+  #home-body
+    section#welcome
+      .container
         h1 The Wrap is a modern versatile dress that can be converted into many fashionable styles
-    //- .container
-      p.
-        It can go from the beach to a cocktail party in an instant or from day to night. It travels well,
-        doesn't wrinkle and always looks fresh and chic.
-        The wrap has a variety of beautiful color fabrics to choose from. The fabric has a modern drape and a comfortable feel.
-        It can be converted into a multitude of styles depending on your mood, body shape or social occasion.
-        Dress it up; dress it down....
-        we know you'll have fun discovering your own unique ways to Wrap it!
-
-  section#eight-styles
-    h1(data-scroll-reveal="enter left and move 200px over 1.33s") It can go from the beach to a cocktail party in an instant or from day to night.
-    .container
-      h1 the 8 most popular styles
+        p.
+          It can go from the beach to a cocktail party in an instant or from day to night. It travels well,
+          doesn't wrinkle and always looks fresh and chic.
+          The wrap has a variety of beautiful color fabrics to choose from. The fabric has a modern drape and a comfortable feel.
+          It can be converted into a multitude of styles depending on your mood, body shape or social occasion.
+          Dress it up; dress it down....
+          we know you'll have fun discovering your own unique ways to Wrap it!
+    section#models
       .row
-        .col.col-md-4.col-sm-4
-          img(src="/img/dress-styles/halter.png")
-          h2 HALTER DRESS
-          p.
-            Slip wrap over your arms and neck, halter style.  Grab left side & push through hole under right arm.  Grab right side & wrap around     waist to tie in back.
-        .col.col-md-4.col-sm-4
-          img(src="/img/dress-styles/one-shoulder.png")
-          h2 ONE SHOULDER DRESS
-          p.
-            Slip wrap over right arm and neck.  Grab left side & push through hole. Grab right side & wrap around to tie in back.
-        .col.col-md-4.col-sm-4
-          img(src="/img/dress-styles/one-shoulder-twist.png")
-          h2 ONE SHOULDER TWIST
-          p.
-            Slip wrap over your arms and neck, halter-style. Grab the shorter corner of fabric on your right. Cross over your body; slip it   underneath the fabric on your left shoulder and twist it around 3 times; pull up a bit to tighten.
+        .col-md-4
+          img(src="/img/models/colleen-knotted.jpg")
+        .col-md-4
+          img(src="/img/models/cyinda-knotted.jpg")
+        .col-md-4
+          img(src="/img/models/colleen-one-shoulder-black.jpg")
+
+    section#eight-styles
+      .container
+        h1 the 8 most popular styles
+        .row
+          .col.col-md-4.col-sm-4
+            img(src="/img/dress-styles/halter.png")
+            h2 HALTER DRESS
+            p.
+              Slip wrap over your arms and neck, halter style.  Grab left side & push through hole under right arm.  Grab right side & wrap around     waist to tie in back.
+          .col.col-md-4.col-sm-4
+            img(src="/img/dress-styles/one-shoulder.png")
+            h2 ONE SHOULDER DRESS
+            p.
+              Slip wrap over right arm and neck.  Grab left side & push through hole. Grab right side & wrap around to tie in back.
+          .col.col-md-4.col-sm-4
+            img(src="/img/dress-styles/one-shoulder-twist.png")
+            h2 ONE SHOULDER TWIST
+            p.
+              Slip wrap over your arms and neck, halter-style. Grab the shorter corner of fabric on your right. Cross over your body; slip it   underneath the fabric on your left shoulder and twist it around 3 times; pull up a bit to tighten.
+        .row
+          .col.col-md-4.col-sm-4
+            img(src="/img/dress-styles/layer.png")
+            h2 LAYER
+            p.
+              Slip wrap over arms and neck, halter style.  Allow to drape loosely and adjust.
+          .col.col-md-4.col-sm-4
+            img(src="/img/dress-styles/belted.png")
+            h2 BELTED
+            p.
+              Slip wrap over arms and neck, halter style. Grab both sides in front. Gather and belt.
+          .col.col-md-4.col-sm-4
+            img(src="/img/dress-styles/mini-knot.png")
+            h2 MINI KNOT
+            p.
+              Slip wrap over arms and neck, halter style. Grab about 2" of fabric in each hand at your bust line, and tie ends together into a small knot.
+        .row
+          .col.col-md-4.col-sm-4.col-md-offset-2
+            img(src="/img/dress-styles/knotted.png")
+            h2 KNOTTED
+            p.
+              Slip wrap over arms and neck, halter style.  Grab both sides together in front.  Fold over and knot once or twice.
+          .col.col-md-4.col-sm-4
+            img(src="/img/dress-styles/shirt.png")
+            h2 SHIRT
+            p.
+              Slip wrap over arms and neck, halter style.  Grab both sides together in front.  Lift up around hips and knot.
+    section#models
       .row
-        .col.col-md-4.col-sm-4
-          img(src="/img/dress-styles/layer.png")
-          h2 LAYER
-          p.
-            Slip wrap over arms and neck, halter style.  Allow to drape loosely and adjust.
-        .col.col-md-4.col-sm-4
-          img(src="/img/dress-styles/belted.png")
-          h2 BELTED
-          p.
-            Slip wrap over arms and neck, halter style. Grab both sides in front. Gather and belt.
-        .col.col-md-4.col-sm-4
-          img(src="/img/dress-styles/mini-knot.png")
-          h2 MINI KNOT
-          p.
-            Slip wrap over arms and neck, halter style. Grab about 2" of fabric in each hand at your bust line, and tie ends together into a small knot.
+        .col-md-4
+          img(src="/img/models/cyinda-halter.jpg")
+        .col-md-4
+          img(src="/img/models/colleen-knotted-blue.jpg")
+        .col-md-4
+          img(src="/img/models/cyinda-layer.jpg")
+    section#colors
+      .container
+        h1 The wrap comes in 11 colors
+      .row.colors
+        .black.col-md-1
+          .block
+          p black
+        .grey.col-md-1
+          .block
+          p grey
+        .ivory.col-md-1
+          .block
+          p ivory
+        .navy.col-md-1
+          .block
+          p navy
+        .chocolate.col-md-1
+          .block
+          p chocolate
+        .turquoise.col-md-1
+          .block
+          p turquoise
+        .pink.col-md-1
+          .block
+          p pink
+        .green.col-md-1
+          .block
+          p green
+        .yellow.col-md-1
+          .block
+          p yellow
+        .red.col-md-1
+          .block
+          p red
+        .purple.col-md-1
+          .block
+          p purple
+
+    section#models
       .row
-        .col.col-md-4.col-sm-4.col-md-offset-2
-          img(src="/img/dress-styles/knotted.png")
-          h2 KNOTTED
-          p.
-            Slip wrap over arms and neck, halter style.  Grab both sides together in front.  Fold over and knot once or twice.
-        .col.col-md-4.col-sm-4
-          img(src="/img/dress-styles/shirt.png")
-          h2 SHIRT
-          p.
-            Slip wrap over arms and neck, halter style.  Grab both sides together in front.  Lift up around hips and knot.
-
-
-  section#models
-    h1 WrapIt Dress Styles 
-      span click image to view full
-    .container
-      #masonry
-        .col-md-4.item
-          a.fancybox(href="/img/mosaic/1-full.jpg")
-            img(src="/img/models/1.jpg")
-        .col-md-4.item
-          a.fancybox(href="/img/models/2-full.jpg")
-            img(src="/img/models/2.jpg")
-        .col-md-2.item.smallest-unit
-          a.fancybox(href="/img/models/3-full.jpg")
-            img(src="/img/models/3.jpg")
-        .col-md-2.item
-          a.fancybox(href="/img/models/4-full.jpg")
-            img(src="/img/models/4.jpg")
-      //.row
-        .col-md-3
-          a.fancybox(href="/img/models/5-full.jpg")
-            img(src="/img/models/5.jpg")
-        .col-md-3
-          a.fancybox(href="/img/models/6-full.jpg")
-            img(src="/img/models/6.jpg")
-        .col-md-3
-          a.fancybox(href="/img/models/7-full.jpg")
-            img(src="/img/models/7.jpg")
-        .col-md-3
-          a.fancybox(href="/img/models/8-full.jpg")
-            img(src="/img/models/8.jpg")
-      //.row
-        .col-md-3
-          a.fancybox(href="/img/models/9-full.jpg")
-            img(src="/img/models/9.jpg")
-        .col-md-3
-          a.fancybox(href="/img/models/10-full.jpg")
-            img(src="/img/models/10.jpg")
-        .col-md-3
-          a.fancybox(href="/img/models/11-full.jpg")
-            img(src="/img/models/11.jpg")
-  section#colors
-    .container
-      h1 The wrap comes in 11 colors
-    .row.colors
-      .black.col-md-1
-        .block
-        p black
-      .grey.col-md-1
-        .block
-        p grey
-      .ivory.col-md-1
-        .block
-        p ivory
-      .navy.col-md-1
-        .block
-        p navy
-      .chocolate.col-md-1
-        .block
-        p chocolate
-      .turquoise.col-md-1
-        .block
-        p turquoise
-      .pink.col-md-1
-        .block
-        p pink
-      .green.col-md-1
-        .block
-        p green
-      .yellow.col-md-1
-        .block
-        p yellow
-      .red.col-md-1
-        .block
-        p red
-      .purple.col-md-1
-        .block
-        p purple
+        .col-md-4
+          img(src="/img/models/colleen-one-shoulder-twist.jpg")
+        .col-md-4
+          img(src="/img/models/cyinda-one-shoulder-back.jpg")
+        .col-md-4
+          img(src="/img/models/cyinda-one-shoulder-twist.jpg")
 
 
 
-
-
-  section#testimonials
-    .container
-      h1 testimonials from our valued customers
-      #owl-carousel.owl-carousel.owl-theme
-        .item 
-          p.
-            &ldquo;I love my wrap! It's awesome! I have the maxi in black, which I like to wear either 
-            as a layer or belted.  I've worn it out to art gallery openings, and as a beach cover-up.  
-            The fabric is comfy and easy... I've taken it with me on several trips, and it doesn't wrinkle!&rdquo;
-          h2 Nina, Kingston, PA
-        .item
-          p.
-            &ldquo;I LOVE my "wrap-it-by-Tish!"  It is so versatile and easy to wear and wash.  Plus, the color 
-            selection is awesome.  It's great for travel since you can use it in various ways which makes it possible 
-            for one to take less clothing on the trip.&rdquo;
-          h2 Brenda, Guaynabo, Puerto Rico
-        .item
-          p.
-            Love my wraps. Recently went to a wedding in the Dominican Republic and had three wraps with me. 
-            I wore one to the beach ceremony, a maxi out to dinner, and the other over my bathing suit.  
-            Everyone asked about it and loved it.  Easy to travel with and simple to care for.   
-          h2 Karen, Atlantic Beach, NY
-        .item
-          p.
-            My "wrap-it" was the best thing I wore all summer! The fabric is fabulous!   
-          h2 Jamie, Wyomissing, PA
-        .item 
-          p.
-            Awesome concept. Tish's wraps are fun!  You can give it a creative twist and wear it 
-            poolside, or you might prefer to use it long and one shouldered for a nice dinner date.  
-            Great for travel, no wrinkles.  I chose mine in bright aqua, and the quality and color are top notch.  
-          h2 Ileana, Guaynabo, Puerto Rico
-        .item
-          p.
-            Very versatile and comfortable piece.  Love the colors it comes in!  
-          h2 Noemi, San Juan, Puerto Rico
-        .item 
-          p.
-            These wraps are a must-have in any wardrobe, for all body types and all ages.  
-            They are versatile, easy,  travel extremely well and so fun to wear!  The colors and fabric are wonderful.  
-            Thanks, Tish, for a fabulous item! I love my wrapitbytish.  
-          h2 Hilary, Vermont
+    section#testimonials
+      .container
+        h1 testimonials from our valued customers
+        #owl-carousel.owl-carousel.owl-theme
+          .item 
+            p.
+              &ldquo;I love my wrap! It's awesome! I have the maxi in black, which I like to wear either 
+              as a layer or belted.  I've worn it out to art gallery openings, and as a beach cover-up.  
+              The fabric is comfy and easy... I've taken it with me on several trips, and it doesn't wrinkle!&rdquo;
+            h2 Nina, Kingston, PA
+          .item
+            p.
+              &ldquo;I LOVE my "wrap-it-by-Tish!"  It is so versatile and easy to wear and wash.  Plus, the color 
+              selection is awesome.  It's great for travel since you can use it in various ways which makes it possible 
+              for one to take less clothing on the trip.&rdquo;
+            h2 Brenda, Guaynabo, Puerto Rico
+          .item
+            p.
+              Love my wraps. Recently went to a wedding in the Dominican Republic and had three wraps with me. 
+              I wore one to the beach ceremony, a maxi out to dinner, and the other over my bathing suit.  
+              Everyone asked about it and loved it.  Easy to travel with and simple to care for.   
+            h2 Karen, Atlantic Beach, NY
+          .item
+            p.
+              My "wrap-it" was the best thing I wore all summer! The fabric is fabulous!   
+            h2 Jamie, Wyomissing, PA
+          .item 
+            p.
+              Awesome concept. Tish's wraps are fun!  You can give it a creative twist and wear it 
+              poolside, or you might prefer to use it long and one shouldered for a nice dinner date.  
+              Great for travel, no wrinkles.  I chose mine in bright aqua, and the quality and color are top notch.  
+            h2 Ileana, Guaynabo, Puerto Rico
+          .item
+            p.
+              Very versatile and comfortable piece.  Love the colors it comes in!  
+            h2 Noemi, San Juan, Puerto Rico
+          .item 
+            p.
+              These wraps are a must-have in any wardrobe, for all body types and all ages.  
+              They are versatile, easy,  travel extremely well and so fun to wear!  The colors and fabric are wonderful.  
+              Thanks, Tish, for a fabulous item! I love my wrapitbytish.  
+            h2 Hilary, Vermont
