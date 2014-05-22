@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: '' });
+  res.render('index', { title: '', id: 'home' });
 };
 
 exports.contact = function(req, res){

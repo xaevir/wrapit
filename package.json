@@ -9,5 +9,11 @@
     "express": "3.4.4",
     "jade": "*",
     "nodemailer": "latest"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-less": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.0",
+    "grunt-browser-sync": "~0.7.0"
   }
 }
