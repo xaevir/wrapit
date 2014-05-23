@@ -6219,7 +6219,7 @@ body {
   padding-bottom: 0;
 }
 #home-body #models .container {
-  max-width: inherit;
+  max-width: 100%;
 }
 #home-body #models img {
   width: 100%;
@@ -6231,11 +6231,6 @@ body {
 #home-body #models h1 span {
   display: block;
   font-size: 20px;
-}
-#home-body #models div[class^='col-md-'] {
-  padding: 0;
-  margin-right: 5px;
-  margin-bottom: 5px;
 }
 #home-body #testimonials {
   background: #111;
