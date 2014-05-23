@@ -13,7 +13,8 @@
    // max-width: 800px;
   //}
 //}
-.container {
+.container-narrow {
+  .container-fluid;
   max-width: 900px;
 }
 
@@ -203,12 +204,13 @@ body {
     font-weight: 300;
   }
   section {
-    padding: 120px 0;
+    padding: 60px 0;
     @media (min-width: @screen-sm-min) { //768 -> up
-      padding: 120px 0;
+      padding: 60px 0;
     }
   }
   #welcome {
+    padding-top: 120px;
     h1 {
       line-height: 1;
       font-weight: 100;
@@ -233,7 +235,6 @@ body {
     //background: @lightSilver;
     //background: url('/img/girl-laying-hat.jpg') no-repeat center top;
     //background-size: cover;
-    padding-bottom: 0;
     h1 {
       //color: #fff;
       //color: #000;
@@ -276,7 +277,6 @@ body {
 
   }
   #colors {
-    padding-top: 240px;
     padding-right: 15px;
     padding-left: 15px;
     @media (min-width: 992px) {
@@ -342,12 +342,11 @@ body {
     }
   }
   #models {
-    .container {
-      max-width: 100%;
-    }
+    //.container-fluid {
+    //  max-width: 100%;
+    //}
     //background: @grey;
-    background: #f7f7f7;
-    padding-bottom: 0;
+    //padding-bottom: 0;
     img {
       width: 100%;
     }
@@ -367,16 +366,16 @@ body {
       //padding-top: 15px;
       //margin: 10px;
     //}
-    //div[class^='col-md-'] {   padding: 0; }
+    div[class^='col-xs-'] {   padding: 0; }
   }
   #testimonials {
-    background: #111;
-    background: #ebebeb;
-    background: @grey;
+    background: #e8e8e8;
+    margin-top: -60px;
+    padding: 120px 0;
     h1 {
-      color: #6E7982;
+      //color: #6E7982;
       //color: #e33b00;
-      color: #fff;
+      color: #333;
       font-weight: 100;
       font-size: 50px;
       margin-bottom: 1em;
@@ -384,17 +383,28 @@ body {
     .item {
       margin: 0 15px;
       p {
-        font-size: 14px;
-        //color: #fff;
-        color: #6E7982;
-        color: #fff;
+        position: relative;
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 16px;
+        color: #333;
         text-align: center;
+      }
+      p:before {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50px;
+        bottom: -33px;
+        border: 17px solid;
+        border-color: #fff transparent transparent #fff;
       }
       h2 {
         font-size: 16px;
         font-weight: 300;
-        color: #6E7982;
-        color: #fff;
+        color: #333;
         text-align: center;
       }
     }
